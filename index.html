@@ -3,24 +3,90 @@
 
 <head>
     <meta charset=utf-8>
-    <meta name=theme-color content="#accf85">
+    <meta name=theme-color content="#ffefcf">
     <title>Charlies Shitty Garden</title>
 
-    <!-- Stylesheet -->
     <style>
         body {
-            background-color: #accf85;
-            color: rgb(255, 243, 221);
+            background-color: #ffefcf;
+            color: rgb(35, 35, 35);
+            font-variant-ligatures: discretionary-ligatures;
+            font-size: 50px;
+        }
+
+        header {
+            position: static;
+
+            font-size: var(--font-size);
+            --font-size: 100px;
+            background-color: red;
+        }
+
+        span {
+            position: fixed;
+            color: black;
+        }
+
+        span.charlies {
+            color: #594258;
+        }
+
+        span.shitty {
+            color: #F2BC57;
+            left: 1.15em;
+            top: 0.7em;
+            font-size: calc(1.1 * var(--font-size));
+        }
+
+        span.garden {
+            color: #A6775B;
+            left: 0.3em;
+            top: 1.7em;
+
+        }
+
+        h2 {
+            font-family: Gilroy;
+        }
+
+        div.outer {
+            background-color: #FDD589;
+            border-radius: 1rem;
+            aspect-ratio: 1/1.5;
+            display: block;
+            width: 20vw;
+            border: 3px #62626236 solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 300px;
+        }
+
+        img {
+            width: 40vw;
+        }
+
+        body {
+            /*background-image: url(cover.jpg);*/
+            background-repeat: repeat;
+            background-size: 600px 600px;
         }
     </style>
 </head>
 
 <body>
-    <div class=meta-theme-color></div>
-
+    <!-- <div class=meta-theme-color></div> -->
+    <img src="logo-path.svg" alt="Charlies Shitty Garden">
     <header>
-        <h1 lang=en>Charlies Shitty Garden</h1>
+        <!--
+            <h1 lang=en contenteditable=true>chaRlies <span>Shitty</span> <span>GaRden</span><br>WhY buy a nice plant - when
+            you can get a shitty one
+            from me?</h1>-->
     </header>
+
+    <!-- <div class=outer>
+        <img src="logo.svg">
+    </div>-->
 </body>
 
 </html>
