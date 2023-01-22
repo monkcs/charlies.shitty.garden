@@ -6,47 +6,42 @@
     <meta name=theme-color content="#ffefcf">
     <title>Charlies Shitty Garden</title>
 
+    <link rel=stylesheet type=text/css href=/font/gilroy/gilroy.css>
+
+    <!-- Apple tweaks -->
+    <meta name=viewport id=viewport content="initial-scale=1, viewport-fit=cover">
+
+    <script>
+        /* Set language based on user-agent language */
+        if (navigator.language.includes("sv"))
+        {
+            document.documentElement.lang = "sv";
+        }
+    </script>
+
     <style>
+        /* Multi language support */
+        html:lang(en) *[lang]:not(:lang(en)),
+        html:lang(en) *:not(:lang(en))[data-lang-localized="true"] {
+            display: none !important;
+        }
+
+        html:lang(sv) *[lang]:not(:lang(sv)),
+        html:lang(sv) *:not(:lang(sv))[data-lang-localized="true"] {
+            display: none !important;
+        }
+
         body {
             background-color: #ffefcf;
-            color: rgb(35, 35, 35);
+            color: rgb(48, 48, 48);
+            font-family: Gilroy;
             font-variant-ligatures: discretionary-ligatures;
-            font-size: 50px;
         }
 
-        header {
-            position: static;
-
-            font-size: var(--font-size);
-            --font-size: 100px;
-            background-color: red;
-        }
-
-        span {
-            position: fixed;
-            color: black;
-        }
-
-        span.charlies {
-            color: #594258;
-        }
-
-        span.shitty {
-            color: #F2BC57;
-            left: 1.15em;
-            top: 0.7em;
-            font-size: calc(1.1 * var(--font-size));
-        }
-
-        span.garden {
-            color: #A6775B;
-            left: 0.3em;
-            top: 1.7em;
-
-        }
 
         h2 {
             font-family: Gilroy;
+            font-weight: bold;
         }
 
         div.outer {
@@ -63,13 +58,18 @@
         }
 
         img {
-            width: 40vw;
+            width: 80vw;
+            max-width: 500px;
+            max-height: 90vh;
         }
 
         body {
-            /*background-image: url(cover.jpg);*/
-            background-repeat: repeat;
-            background-size: 600px 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
         }
     </style>
 </head>
@@ -77,12 +77,8 @@
 <body>
     <!-- <div class=meta-theme-color></div> -->
     <img src="logo-path.svg" alt="Charlies Shitty Garden">
-    <header>
-        <!--
-            <h1 lang=en contenteditable=true>chaRlies <span>Shitty</span> <span>GaRden</span><br>WhY buy a nice plant - when
-            you can get a shitty one
-            from me?</h1>-->
-    </header>
+    <h2 lang="en">Coming soon</h2>
+    <h2 lang="sv">Kommer snart</h2>
 
     <!-- <div class=outer>
         <img src="logo.svg">
